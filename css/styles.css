@@ -42,12 +42,33 @@ hover button #188CE8
      color: var(--primary-text-color);
  }
 
+ p,h1,h2,h3,h4,h5,h6 {
+     margin: 0;
+ }
+
+ ul, ol {
+    padding-left: 0;
+    margin: 0;
+ }
+
+ img {
+     display: block;
+ }
+
  .link {
      text-decoration: none;
  }
 
  .list {
      list-style: none;
+ }
+
+ .container {
+     width: 1200px;
+     padding-left: 15px;
+     padding-right: 15px;
+     margin: 0 auto;
+     outline: 1px solid red;
  }
 
  .visually-hidden {
@@ -81,6 +102,8 @@ hover button #188CE8
  /* ----- Header ----- */
 
  .header {
+     padding-top: 24px;
+     padding-bottom: 25px;
      background-color: var(--white-bc-color);
  }
 
@@ -137,6 +160,8 @@ color: var(--accent-color);
 /* ----- Hero ----- */
 
 .hero {
+padding-top: 200px;
+padding-bottom: 217px;
     background-color: var(--secondary-bc-color);
 }
 .hero-title {
@@ -168,9 +193,13 @@ cursor: pointer;
 /* --- features --- */
 
 .features {
+padding-top: 94px;
+padding-bottom: 94px;
     background-color: var(--primary-bc-color);
 } 
+
 .features-top-text {
+margin-bottom: 10px;
 font-style: normal;
 font-size: 14px;
 line-height: 1.14;
@@ -180,16 +209,19 @@ color: var(--primary-text-color);
 
 }
 
-.features-text {       
+.features-text { 
+max-width: 270px;      
 color: var(--secondary-text-color);
 }
 
 /* --- <work> Чем мы занимаемся --- */
 
 .work {
+padding-bottom: 94px;
     background-color: var(--primary-bc-color);
 } 
 .work-title {
+margin-bottom: 50px;
 font-size: 36px;
 line-height: 1.17;
 text-align: center;
@@ -200,9 +232,13 @@ letter-spacing: 0.03em;
 /* --- <team> Наша команда --- */
 
 .team {
+padding-top: 94px;
+padding-bottom: 94px; 
     background-color: var(--team-bc-color);
 }
+
 .team-title {
+margin-bottom: 50px;
 font-size: 36px;
 line-height: 1.17;
 text-align: center;
@@ -227,6 +263,8 @@ letter-spacing: 0.03em;
 /* ----- <footer> Контакты ----- */
 
 .footer {
+padding-top: 60px;
+padding-bottom: 60px;
     background-color: var(--secondary-bc-color);
 }
 .footer-logo {  
