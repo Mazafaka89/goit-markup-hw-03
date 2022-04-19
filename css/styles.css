@@ -68,7 +68,7 @@ hover button #188CE8
      padding-left: 15px;
      padding-right: 15px;
      margin: 0 auto;
-     outline: 1px solid red;
+     /*outline: 1px solid red; */
  }
 
  .visually-hidden {
@@ -104,6 +104,7 @@ hover button #188CE8
  .header {
      padding-top: 24px;
      padding-bottom: 25px;
+
      background-color: var(--white-bc-color);
  }
 
@@ -121,14 +122,18 @@ hover button #188CE8
 
 
 .header-logo {
-margin-right: 93px;
+    display: block;
+    margin-right: 93px;
+
 font-family: 'Raleway';
 font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
+
     color: var(--accent-color);
 }
+
 .header-logo-black {
     color: var(--primary-text-color);
 }
@@ -141,7 +146,7 @@ color: var(--primary-text-color);
 
 .header-link:hover,
 .header-link:focus {
-color: var(--accent-color);
+    color: var(--accent-color);
 }
 
 .current {
@@ -151,6 +156,7 @@ color: var(--accent-color);
 .header-item:not(:last-child) {
     margin-right: 50px;
 }
+
 
 /* --- header-address --- */
 
@@ -164,7 +170,8 @@ color: var(--accent-color);
 
 .header-mail-link {
     margin-right: 50px;
-     color: var(--secondary-text-color);
+
+    color: var(--secondary-text-color);
 }
 
 .header-mail-link:hover,
@@ -185,8 +192,9 @@ color: var(--accent-color);
 
 
 .hero {
-padding-top: 200px;
-padding-bottom: 200px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
     background-color: var(--secondary-bc-color);
 }
 .hero-title {
@@ -196,25 +204,31 @@ line-height: 1.36;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
-max-width: 700px;
-margin-left: auto;
-margin-right: auto;
-margin-bottom: 30px;
-color: var(--white-bc-color);
+
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+
+    color: var(--white-bc-color);
 }
 
 .hero-btn { 
-min-width: 200px; 
-height: 50px;
+    min-width: 200px; 
+    height: 50px;
+    border-radius: 4px;
+
 font-family: inherit; 
 font-style: normal;   
 font-size: 16px;
 line-height: 1.88;
 letter-spacing: 0.06em;
 background-color: var(--accent-color);
-display: block;
-margin: 0 auto;
-position: relative;
+
+    display: block;
+    margin: 0 auto;
+    position: relative;
+
 color: var(--white-bc-color);
 cursor: pointer;
 }
@@ -227,54 +241,61 @@ cursor: pointer;
 /* --- features --- */
 
 .features {
-padding-top: 94px;
-padding-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+
     background-color: var(--primary-bc-color);
 }
 
 .features-list {
-display: flex;
+    display: flex;
 }
 
 .features-item:not(:last-child) {
-margin-right: 30px;
+    margin-right: 30px;
 }
 
 .features-top-text {
-margin-bottom: 10px;
+    margin-bottom: 10px;
+
 font-style: normal;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-color: var(--primary-text-color);
+
+    color: var(--primary-text-color);
 
 }
 
 .features-text { 
-max-width: 270px;      
-color: var(--secondary-text-color);
+max-width: 270px;   
+
+    color: var(--secondary-text-color);
 }
 
 /* --- <work> Чем мы занимаемся --- */
 
 .work {
-padding-bottom: 94px;
+    padding-bottom: 94px;
+
     background-color: var(--primary-bc-color);
 } 
 
 .work-pictures {
-display: flex;
+    display: flex;
 }
 
 .work-title {
     margin-left: auto;
     margin-right: auto;    
-margin-bottom: 50px;
+    margin-bottom: 50px;
+
 font-size: 36px;
 line-height: 1.17;
 text-align: center;
 letter-spacing: 0.03em;
+
     color: var(--primary-text-color);
 }
 
@@ -285,17 +306,20 @@ letter-spacing: 0.03em;
 /* --- <team> Наша команда --- */
 
 .team {
-padding-top: 94px;
-padding-bottom: 94px; 
+    padding-top: 94px;
+    padding-bottom: 94px;
+
     background-color: var(--team-bc-color);
 }
 
 .team-title {
-margin-bottom: 50px;
+    margin-bottom: 50px;
+
 font-size: 36px;
 line-height: 1.17;
 text-align: center;
 letter-spacing: 0.03em;
+
     color: var(--primary-text-color);
 }
 
@@ -305,16 +329,19 @@ letter-spacing: 0.03em;
 }
 
 .team-image {
-    flex-basis: calc((100%-120px)/3);
+    width: calc(100% / 4 -30px);
     margin-left: 30px;
 }
 
 .team-name {
     margin-bottom: 10px;
+
 font-weight: 500;
 font-size: 16px;
 line-height: 1.19;
 letter-spacing: 0.03em;
+text-align: center;
+
     color: var(--primary-text-color);
 }
 .team-text {
@@ -322,6 +349,8 @@ font-weight: 400;
 font-size: 16px;
 line-height: 1.19;
 letter-spacing: 0.03em;
+text-align: center;
+
     color: var(--secondary-text-color);
 }
 
@@ -333,17 +362,21 @@ letter-spacing: 0.03em;
 /* ----- <footer> Контакты ----- */
 
 .footer {
-padding-top: 60px;
-padding-bottom: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
     background-color: var(--secondary-bc-color);
 }
 .footer-logo {  
+    margin-bottom: 20px;
+    display: block;
+
 font-family: 'Raleway';
 font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
-margin-bottom: 20px;
+
     color: var(--accent-color);
 }
 .footer-logo-white {
@@ -352,6 +385,7 @@ font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
+
     color: var(--white-bc-color);
 }
 .address-list {
@@ -359,10 +393,12 @@ letter-spacing: 0.03em;
 }
 .footer-address-street {
     margin-bottom: 9px;
+
     color: var(--white-bc-color);
 }
 .footer-mail-link {
     margin-bottom: 9px;
+
     color: rgba(255, 255, 255, 0.6); 
 }
 .footer-mail-link:hover,
@@ -391,6 +427,7 @@ letter-spacing: 0.03em;
 .portfolio {
     padding-top: 24px;
     padding-bottom: 25px;
+
     background-color: var(--white-bc-color);
 }
 
@@ -400,12 +437,15 @@ letter-spacing: 0.03em;
 }
 .portfolio-logo {
     margin-right: 93px;
+    display: block;
+
 font-family: 'Raleway';
 font-style: normal;
 font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
+
     color: var(--accent-color);
 }
 .portfolio-logo-black {
@@ -461,6 +501,7 @@ letter-spacing: 0.03em;
 .filter {
     padding-top: 94px;
     padding-bottom: 94px;
+
     background-color: var(--primary-bc-color);
 }
 
@@ -478,12 +519,17 @@ letter-spacing: 0.03em;
 }
 
 .filter-btn {
+    display: block;
+    padding: 6px 22px;
+    border-radius: 4px;
+
 font-family: inherit;    
 font-weight: 500;
 font-size: 16px;
 line-height: 1.62;
 text-align: center;
 letter-spacing: 0.03em;
+
     background-color: var(--team-bc-color);
     color: var(--primary-text-color);
     cursor: pointer;
@@ -496,50 +542,80 @@ letter-spacing: 0.03em;
     background-color: var(--accent-color);
 }
 
+.filter-list-project {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+}
+
+.filter-list-item {
+    width: calc(100% / 3 -30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.filter-box {
+    padding: 20px 24px;
+
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+}
+
 .filter-name {
-margin-bottom: 4px;
+    margin-bottom: 4px;
+
 font-size: 18px;
 line-height: 2.00;
 letter-spacing: 0.06em;
-color: var(--primary-text-color)
+text-align: left;
+
+    color: var(--primary-text-color)
 }
 .filter-text {
 font-weight: 400;    
 font-size: 16px;
 line-height: 1.88;
 letter-spacing: 0.03em;
-color: var(--secondary-text-color)
+text-align: left;
+
+    color: var(--secondary-text-color)
 }
 
 /* ----- footer ----- */
 
 .portfolio-footer {
-padding-top: 60px;
-padding-bottom: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
     background-color: var(--secondary-bc-color);
 }
 .portfolio-footer-logo {
-margin-bottom: 20px;
+    display: block;
+    margin-bottom: 20px;
+
 font-family: 'Raleway';
 font-style: normal;
 font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
-letter-spacing: 0.03em;  
+letter-spacing: 0.03em;
+
     color: var(--accent-color);
 }
 .portfolio-footer-logo-white {
     color: var(--white-bc-color);
 }
-.portfolio-contacts-list {
-    max-width: 231px;
-}
+
 .contacts-link-street {
     margin-bottom: 9;
+
     color: var(--white-bc-color);
 }
 .contacts-mail-link {
     margin-bottom: 9px;
+
     color: rgba(255, 255, 255, 0.6);
 }
 .contacts-mail-link:hover,
